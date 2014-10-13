@@ -44,7 +44,9 @@ public class EnvInjectAction implements Action, StaplerProxy {
     }
 
     public String getIconFileName() {
-        return "document-properties.gif";
+    	// In theory returning null should keep the link from appearing at all. In
+    	// practice this mysteriously fails.
+        return null;
     }
 
     public String getDisplayName() {
